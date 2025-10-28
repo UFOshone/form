@@ -1,53 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WorldWide Guest Speakers</title>
-  <link rel="stylesheet" href="Main.css">
+  <title>Alien Nation Registration</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
-  <!-- Header -->
   <header>
-    <img src="images/logo.gif" alt="Logo" width="80">
-    <img src="images/Alien.gif" alt="Alien Nation" width="80">
-    <h2>WorldWide</h2>
-    <h3>Bringing cutting-edge speakers who are outta this world</h3>
+    <h1>Register for the Alien Nation Conference</h1>
   </header>
 
+  <main class="form-section">
+    <h2>Registration Form</h2>
+    <p>Complete the form below to join our intergalactic network.</p>
 
-  <!-- Main content -->
-  <main>
-    <h1>This season's guest speakers</h1>
+    <form action="#" method="post" class="registration-form">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
 
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
 
-    <nav>
-      <ul>
-        <li>November: <a class="date_passed" href="speakers/brancaccio.html">Oshone Khan</a></li>
-        <!-- Add more speakers here -->
-      </ul>
-    </nav>
+      <label for="planet">Home Planet:</label>
+      <input type="text" id="planet" name="planet" placeholder="e.g. Earth, Mars">
 
+      <label for="species">Species Type:</label>
+      <select id="species" name="species">
+        <option value="">-- Select One --</option>
+        <option value="human">Human</option>
+        <option value="grey">Grey Alien</option>
+        <option value="reptilian">Reptilian</option>
+        <option value="pleiadian">Pleiadian</option>
+      </select>
 
-    <h2>Look to the stars</h2>
-    <p>Pay attention to what’s coming...</p>
-    <p>Planet We is ready for you...</p>
-    <p>See you at the next show!</p>
+      <label for="message">Why do you want to join?</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us why you’re ready for contact..."></textarea>
 
+      <div class="button-group">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
 
-    <p id="contact_us">
-      <em>Contact us by phone</em> at (333) 333-9999 for ticket information.
-    </p>
+    <p class="link"><a href="gallery.html">View the Alien Gallery →</a></p>
   </main>
-
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 United States of Consciousness</p>
-  </footer>
-
-
 </body>
 </html>
