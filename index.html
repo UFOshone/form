@@ -7,16 +7,14 @@
 </head>
 <body>
   <header>
-    <h1>Register for the Alien Nation Conference</h1>
+    <h1>Join the Alien Nation</h1>
+    <p>Register below to attend our intergalactic conference.</p>
   </header>
 
-  <main class="form-section">
-    <h2>Registration Form</h2>
-    <p>Complete the form below to join our intergalactic network.</p>
-
-    <form action="#" method="post" class="registration-form">
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" required>
+  <main>
+    <form action="/submit" method="post" class="registration-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
 
       <label for="email">Email Address:</label>
       <input type="email" id="email" name="email" required>
@@ -26,23 +24,23 @@
 
       <label for="species">Species Type:</label>
       <select id="species" name="species">
-        <option value="">-- Select One --</option>
+        <option value="">--Select--</option>
         <option value="human">Human</option>
-        <option value="grey">Grey Alien</option>
+        <option value="grey">Grey</option>
         <option value="reptilian">Reptilian</option>
         <option value="pleiadian">Pleiadian</option>
       </select>
 
       <label for="message">Why do you want to join?</label>
-      <textarea id="message" name="message" rows="4" placeholder="Tell us why you’re ready for contact..."></textarea>
+      <textarea id="message" name="message" rows="4" placeholder="Share your cosmic intentions..."></textarea>
 
-      <div class="button-group">
+      <div class="buttons">
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
       </div>
     </form>
 
-    <p class="link"><a href="gallery.html">View the Alien Gallery →</a></p>
+    <p><a href="gallery.html">View the Alien Gallery →</a></p>
   </main>
 </body>
 </html>
